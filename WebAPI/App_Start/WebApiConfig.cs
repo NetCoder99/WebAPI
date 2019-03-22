@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.ExceptionHandling;
+using WebAPI.Common;
 
 namespace WebAPI
 {
@@ -18,7 +20,7 @@ namespace WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
 
-
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
 
         }
     }

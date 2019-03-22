@@ -6,14 +6,14 @@
 // to migration issues in the EF, which I don't want to deal with now.
 //============================================================================
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using WebApp2.Models.Addresses;
 
 namespace WebAPI.Models
 {
 
-    [Table("StateCodes", Schema = "WEBAPP2")]
+    [Table("StateCodes", Schema = "Common")]
     public class StateCode 
     {
         [Key]
@@ -41,6 +41,10 @@ namespace WebAPI.Models
         }
 
         public int CountryCodeId { get; set; }
-        //public CountryCode CountryCode { get; set; }
+
+        public class StateCodeRoot
+        {
+            public List<StateCode> States { get; set; }
+        }
     }
 }

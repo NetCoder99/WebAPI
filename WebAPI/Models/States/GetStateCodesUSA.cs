@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace WebAPI.Models
 {
-    public class GetStateCodesUSA : IGetStates
+    public class GetStateCodesUSA //: IGetStates
     {
         public int CountryCode { get { return 1; } }
 

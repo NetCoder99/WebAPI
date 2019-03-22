@@ -4,10 +4,10 @@ using WebAPI.Models;
 
 namespace WebAPI.DataConnections
 {
-    public class SqlExpContext : DbContext
+    public class SqlLclContext : DbContext
     {
 
-        public SqlExpContext()
+        public SqlLclContext()
         { this.Database.Connection.ConnectionString = GetSqlConnectionStr(); }
 
         public DbSet<CountryCode>  CountryCodes { get; set; }
@@ -15,7 +15,7 @@ namespace WebAPI.DataConnections
 
         private static string GetSqlConnectionStr()
         {
-            var c1 = ConfigurationManager.ConnectionStrings["AdWorks16Exp"];
+            var c1 = ConfigurationManager.ConnectionStrings["AdWorks16Lcl"];
             return c1.ConnectionString;
         }
 

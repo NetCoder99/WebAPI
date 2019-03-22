@@ -8,7 +8,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using WebAPI.DataConnections;
-using WebApp2.Models.Addresses;
 
 namespace WebAPI.Models
 {

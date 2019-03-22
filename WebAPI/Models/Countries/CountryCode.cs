@@ -11,9 +11,9 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using WebAPI.Models;
 
-namespace WebApp2.Models.Addresses
+namespace WebAPI.Models
 {
-    [Table("CountryCodes", Schema = "WEBAPP2")]
+    [Table("CountryCodes", Schema = "Common")]
     public class CountryCode
     {
         [Key]

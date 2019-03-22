@@ -11,9 +11,9 @@ using System.Text;
 using System.Threading.Tasks;
 using WebAPI.DataConnections;
 
-namespace WebApp2.Models.Addresses
+namespace WebAPI.Models
 {
-    //class CountryCodeList 
+    //class CountryCodeList
     //{
     //    private static List<CountryCode> _CountryCodesList = new List<CountryCode>();
 

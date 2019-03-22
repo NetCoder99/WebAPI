@@ -1,0 +1,690 @@
+﻿{
+  "States": [
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AB",
+      "StateName": "Alberta",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "BC",
+      "StateName": "British Columbia",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MB",
+      "StateName": "Manitoba",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NB",
+      "StateName": "New Brunswick",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NL",
+      "StateName": "Newfoundland and Labrador",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NT",
+      "StateName": "Northwest Territories",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NS",
+      "StateName": "Nova Scotia",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NU",
+      "StateName": "Nunavut",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ON",
+      "StateName": "Ontario",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "PE",
+      "StateName": "Prince Edward Island",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "QC",
+      "StateName": "Quebec",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SK",
+      "StateName": "vSaskatchewan",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "YT",
+      "StateName": "Yukon",
+      "LoadDate": "2019-03-22T11:17:09.3067763-07:00",
+      "CountryCodeId": 3
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AG",
+      "StateName": "Aguascalientes",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "BC",
+      "StateName": "Baja California",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "BS",
+      "StateName": "Baja California Sur",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CH",
+      "StateName": "Chihuahua",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CL",
+      "StateName": "Colima",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CM",
+      "StateName": "Campeche",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CO",
+      "StateName": "Coahuila",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CS",
+      "StateName": "Chiapas",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "DF",
+      "StateName": "Federal District",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "DG",
+      "StateName": "Durango",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "GR",
+      "StateName": "Guerrero",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "GT",
+      "StateName": "Guanajuato",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "HG",
+      "StateName": "Hidalgo",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "JA",
+      "StateName": "Jalisco",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ME",
+      "StateName": "México State",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MI",
+      "StateName": "Michoacán",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MO",
+      "StateName": "Morelos",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NA",
+      "StateName": "Nayarit",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NL",
+      "StateName": "Nuevo León",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "OA",
+      "StateName": "Oaxaca",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "PB",
+      "StateName": "Puebla",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "QE",
+      "StateName": "Querétaro",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "QR",
+      "StateName": "Quintana Roo",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SI",
+      "StateName": "Sinaloa",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SL",
+      "StateName": "San Luis Potosí",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SO",
+      "StateName": "Sonora",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "TB",
+      "StateName": "Tabasco",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "TL",
+      "StateName": "Tlaxcala",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "TM",
+      "StateName": "Tamaulipas",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "VE",
+      "StateName": "Veracruz",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "YU",
+      "StateName": "Yucatán",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ZA",
+      "StateName": "Zacatecas",
+      "LoadDate": "2019-03-22T11:17:09.3087739-07:00",
+      "CountryCodeId": 2
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AL",
+      "StateName": "ALABAMA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AK",
+      "StateName": "ALASKA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AZ",
+      "StateName": "ARIZONA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "AR",
+      "StateName": "ARKANSAS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CA",
+      "StateName": "CALIFORNIA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CO",
+      "StateName": "COLORADO",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "CT",
+      "StateName": "CONNECTICUT",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "DE",
+      "StateName": "DELAWARE",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "FL",
+      "StateName": "FLORIDA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "GA",
+      "StateName": "GEORGIA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "HI",
+      "StateName": "HAWAII",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ID",
+      "StateName": "IDAHO",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "IL",
+      "StateName": "ILLINOIS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "IN",
+      "StateName": "INDIANA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "IA",
+      "StateName": "IOWA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "KS",
+      "StateName": "KANSAS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "KY",
+      "StateName": "KENTUCKY",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "LA",
+      "StateName": "LOUISIANA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ME",
+      "StateName": "MAINE",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MD",
+      "StateName": "MARYLAND",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MA",
+      "StateName": "MASSACHUSETTS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MI",
+      "StateName": "MICHIGAN",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MN",
+      "StateName": "MINNESOTA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MS",
+      "StateName": "MISSISSIPPI",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MO",
+      "StateName": "MISSOURI",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "MT",
+      "StateName": "MONTANA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NE",
+      "StateName": "NEBRASKA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NV",
+      "StateName": "NEVADA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NH",
+      "StateName": "NEW HAMPSHIRE",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NJ",
+      "StateName": "NEW JERSEY",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NM",
+      "StateName": "NEW MEXICO",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NY",
+      "StateName": "NEW YORK",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "NC",
+      "StateName": "NORTH CAROLINA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "ND",
+      "StateName": "NORTH DAKOTA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "OH",
+      "StateName": "OHIO",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "OK",
+      "StateName": "OKLAHOMA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "OR",
+      "StateName": "OREGON",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "PA",
+      "StateName": "PENNSYLVANIA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "RI",
+      "StateName": "RHODE ISLAND",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SC",
+      "StateName": "SOUTH CAROLINA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "SD",
+      "StateName": "SOUTH DAKOTA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "TN",
+      "StateName": "TENNESSEE",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "TX",
+      "StateName": "TEXAS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "UT",
+      "StateName": "UTAH",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "VT",
+      "StateName": "VERMONT",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "VA",
+      "StateName": "VIRGINIA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "WA",
+      "StateName": "WASHINGTON",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "WV",
+      "StateName": "WEST VIRGINIA",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "WI",
+      "StateName": "WISCONSIN",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "WY",
+      "StateName": "WYOMING",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "GU",
+      "StateName": "GUAM",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "PR",
+      "StateName": "PUERTO RICO",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    },
+    {
+      "StateCodeId": 0,
+      "StateAbbr": "VI",
+      "StateName": "VIRGIN ISLANDS",
+      "LoadDate": "2019-03-22T11:17:09.3127695-07:00",
+      "CountryCodeId": 1
+    }
+  ]
+}
