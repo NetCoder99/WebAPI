@@ -16,7 +16,7 @@
     <AssemblyName>WebAPI</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -166,25 +166,35 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Common\CommonFileProcs.cs" />
     <Compile Include="Common\CommonJSONProcs.cs" />
+    <Compile Include="Common\CommonErrorProcs.cs" />
     <Compile Include="Common\GlobalExceptionHandler .cs" />
+    <Compile Include="Common\HashFunctions.cs" />
     <Compile Include="Common\JsonConverterBool.cs" />
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="DataConnections\DBFunctions.cs" />
+    <Compile Include="DataConnections\SqlExpIdentity.cs" />
+    <Compile Include="DataConnections\SqlLclIdentity.cs" />
     <Compile Include="DataConnections\SqlLclContext.cs" />
     <Compile Include="DataConnections\SqlExpContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903221706276_InitialCreate.cs" />
-    <Compile Include="Migrations\201903221706276_InitialCreate.Designer.cs">
-      <DependentUpon>201903221706276_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201903231927501_users1.cs" />
+    <Compile Include="Migrations\201903231927501_users1.Designer.cs">
+      <DependentUpon>201903231927501_users1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201903221844086_states1.cs" />
-    <Compile Include="Migrations\201903221844086_states1.Designer.cs">
-      <DependentUpon>201903221844086_states1.cs</DependentUpon>
+    <Compile Include="Migrations\201903231953088_users2.cs" />
+    <Compile Include="Migrations\201903231953088_users2.Designer.cs">
+      <DependentUpon>201903231953088_users2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Security\AspNetRoles.cs" />
+    <Compile Include="Models\Security\AspNetUser.cs" />
+    <Compile Include="Models\Security\AspNetUserClaims.cs" />
+    <Compile Include="Models\Security\AspNetUserLogins.cs" />
+    <Compile Include="Models\Security\AspNetUserRoles.cs" />
+    <Compile Include="Models\Security\UserAccountJson.cs" />
     <Compile Include="Models\Countries\CountryCode.cs" />
     <Compile Include="Models\Countries\CountryCodeList.cs" />
     <Compile Include="Models\Countries\GetCountryCodesStatic.cs" />
@@ -193,13 +203,16 @@
     <Compile Include="Models\States\GetStateCodesMEX.cs" />
     <Compile Include="Models\States\GetStateCodesUSA.cs" />
     <Compile Include="Models\States\StateCode.cs" />
-    <Compile Include="Models\States\StateCodeList.cs" />
     <Compile Include="Models\Misc\Student.cs" />
     <Compile Include="Models\Misc\StudentData.cs" />
     <Compile Include="Models\Misc\StudentFields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\WebAPI.mdf" />
+    <Content Include="App_Data\WebAPI_log.ldf">
+      <DependentUpon>WebAPI.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -222,14 +235,15 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="JsonData\Stack001.json" />
     <Content Include="JsonData\Student.json" />
     <Content Include="JsonData\StudentData.json" />
     <Content Include="JsonData\StudentFields.json" />
     <Content Include="JsonData\UserAccountInitList.json" />
     <Content Include="JsonData\UserAccountInitListShort.json" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -245,19 +259,17 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="JsonData\Countries.json" />
     <Content Include="JsonData\States.json" />
+    <Content Include="JsonData\CountriesFlat.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201903221706276_InitialCreate.resx">
-      <DependentUpon>201903221706276_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903231927501_users1.resx">
+      <DependentUpon>201903231927501_users1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201903221844086_states1.resx">
-      <DependentUpon>201903221844086_states1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201903231953088_users2.resx">
+      <DependentUpon>201903231953088_users2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
@@ -281,7 +293,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>50307</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/WebAPI</IISUrl>
+          <IISUrl>http://localhost:50307/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

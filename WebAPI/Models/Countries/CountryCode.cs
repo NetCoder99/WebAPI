@@ -14,7 +14,7 @@ using WebAPI.Models;
 namespace WebAPI.Models
 {
     [Table("CountryCodes", Schema = "Common")]
-    public class CountryCode
+    public class CountryCode 
     {
         [Key]
         public int CountryCodeId  { get; set; }
@@ -39,9 +39,9 @@ namespace WebAPI.Models
             this.LoadDate = DateTime.Now;
         }
 
-        public ICollection<StateCode> StateCode { get; set; }
+        //public ICollection<StateCode> StateCode { get; set; }
 
-        public class CountryCodeRoot
+        public class CountryCodeRoot 
         {
             public List<CountryCode> Country { get; set; }
         }

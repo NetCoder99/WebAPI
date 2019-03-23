@@ -1,0 +1,21 @@
+[
+    {
+      "CountryCodeId": 1,
+      "CountryAbbr": "MEX",
+      "CountryName": "Mexico",
+      "LoadDate": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "CountryCodeId": 2,
+      "CountryAbbr": "CAN",
+      "CountryName": "Canada",
+      "LoadDate": "2012-04-23T18:25:43.511Z"
+    },
+    {
+      "CountryCodeId": 3,
+      "CountryAbbr": "USA",
+      "CountryName": "United States",
+      "LoadDate": "2012-04-23T18:25:43.511Z"
+    }
+  ]
+ 

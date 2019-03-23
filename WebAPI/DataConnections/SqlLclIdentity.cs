@@ -6,14 +6,18 @@ using WebAPI.Models.Security;
 
 namespace WebAPI.DataConnections
 {
-    public class SqlLclContext : DbContext
+
+    public class SqlLclIdentity : IdentityDbContext<AspNetUser, AspNetRoles, string, IdentityUserLogin, IdentityUserRole, IdentityUserClaim>
     {
 
-        public SqlLclContext() 
+        public SqlLclIdentity() 
         { this.Database.Connection.ConnectionString = GetSqlConnectionStr(); }
 
-        public DbSet<CountryCode>  CountryCodes { get; set; }
-        public DbSet<StateCode>    StateCodes   { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.HasDefaultSchema("Security");
+        }
 
         private static string GetSqlConnectionStr()
         {

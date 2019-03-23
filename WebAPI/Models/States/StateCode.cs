@@ -42,7 +42,7 @@ namespace WebAPI.Models
 
         public int CountryCodeId { get; set; }
 
-        public class StateCodeRoot
+        public class StateCodeRoot 
         {
             public List<StateCode> States { get; set; }
         }

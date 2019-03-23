@@ -20,11 +20,12 @@ namespace WebAPI.DataConnections
             {
                 string schemaName = ((TableAttribute)tableAttributes[0]).Schema;
                 string tableName = ((TableAttribute)tableAttributes[0]).Name;
-                db_con.Database.ExecuteSqlCommand($"TRUNCATE TABLE " + schemaName + "." + tableName);
+                //db_con.Database.ExecuteSqlCommand($"TRUNCATE TABLE " + schemaName + "." + tableName);
+                db_con.Database.ExecuteSqlCommand($"DELETE FROM " + schemaName + "." + tableName);
             }
             else
             {
-                db_con.Database.ExecuteSqlCommand($"TRUNCATE TABLE {typeof(T).Name}");
+                db_con.Database.ExecuteSqlCommand($"DELETE FROM {typeof(T).Name}");
             }
         }
 

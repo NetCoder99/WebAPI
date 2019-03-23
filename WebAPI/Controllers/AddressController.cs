@@ -4,7 +4,8 @@ using System.Web.Http;
 using WebAPI.Common;
 using WebAPI.DataConnections;
 using WebAPI.Models;
-
+using WebAPI.Models.Accounts;
+using WebAPI.Models.Security;
 
 namespace WebAPI.Controllers
 {
@@ -23,8 +24,7 @@ namespace WebAPI.Controllers
             List<CountryCode> rtn_list = CommonJSONProcs.ProcessJSONClass<CountryCode>(jsonData);
             using (var db_con = new SqlLclContext())
             {
-                if (truncate)
-                { DBFunctions.Truncate<CountryCode>(db_con); }
+                if (truncate) { DBFunctions.Truncate<CountryCode>(db_con); }
                 db_con.CountryCodes.AddRange(rtn_list);
                 db_con.SaveChanges();
                 return db_con.CountryCodes.ToList();
@@ -79,13 +79,12 @@ namespace WebAPI.Controllers
         [Route("api/Address/GetStates")]
         public IEnumerable<StateCode> GetStates()
         {
-            using (var db_con = new SqlExpContext())
+            using (var db_con = new SqlLclContext())
             {
                 List<StateCode> rtn_obj = db_con.StateCodes.ToList();
                 return rtn_obj;
             }
         }
-
         [HttpGet]
         [Route("api/Address/GetStates/{code}")]
         public IEnumerable<StateCode> GetStates(string code)
@@ -97,6 +96,46 @@ namespace WebAPI.Controllers
                 return rtn_obj;
             }
         }
+
+        [HttpGet]
+        [Route("api/Address/GetUsers")]
+        public IEnumerable<UserDetailJson> GetUsers()
+        {
+            string jsonDataDir = CommonFileProcs.GetLocalDirectory("JsonData");
+            string jsonData = CommonFileProcs.GetAllRecords(jsonDataDir, "UserAccountInitList.json");
+            List<UserDetailJson> rtn_list = CommonJSONProcs.ProcessJSONClass<UserDetailJson>(jsonData);
+            return rtn_list;
+        }
+        [HttpGet]
+        [Route("api/Address/LoadUsers")]
+        public IEnumerable<UserDetailJson> LoadUsers()
+        {
+            string jsonDataDir = CommonFileProcs.GetLocalDirectory("JsonData");
+            string jsonData = CommonFileProcs.GetAllRecords(jsonDataDir, "UserAccountInitList.json");
+            List<UserDetailJson> rtn_list = CommonJSONProcs.ProcessJSONClass<UserDetailJson>(jsonData);
+
+            using (var db_con = new SqlExpIdentity())
+            {
+                var users = db_con.Users.ToList();
+                foreach (UserDetailJson json_user in rtn_list)
+                {
+                    AspNetUser ident_user = new AspNetUser(json_user);
+                    db_con.Users.Add(ident_user);
+                }
+                try
+                {
+                    int row_cnt = db_con.SaveChanges();
+                }
+                catch
+                {
+                    var errors = db_con.GetValidationErrors();
+                    var errorList = CommonErrorProcs.ExtractValidationErrors(db_con);
+                }
+            }
+
+            return rtn_list;
+        }
+
 
     }
 }
