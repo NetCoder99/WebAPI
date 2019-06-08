@@ -6,11 +6,18 @@ using System.IO;
 using System.Linq;
 using WebAPI.Models;
 using WebAPI.Models.Accounts;
+using WebAPI.Models.Misc;
 
 namespace WebAPI.Common
 {
     class CommonJSONProcs
     {
+
+        //public static GetParms ProcessGetParms(JToken jToken)
+        //{
+        //    var root = JsonConvert.DeserializeObject<GetParms>(json_string);
+        //    return root;
+        //}
 
         // ---------------------------------------------------------------------------------------
         // messing around with Generics and JSON

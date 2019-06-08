@@ -1,20 +1,48 @@
-﻿using System.Collections.Generic;
+﻿using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Formatting;
+using System.Text;
 using System.Web.Http;
 using WebAPI.Common;
 using WebAPI.DataConnections;
 using WebAPI.Models;
 using WebAPI.Models.Accounts;
+using WebAPI.Models.Misc;
 using WebAPI.Models.Security;
+using WebAPI.Security;
 
 namespace WebAPI.Controllers
 {
+    [BasicAuthentication]
     public class AddressController : ApiController
     {
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("api/Address/Get")]
+        public IHttpActionResult Get([FromBody]JToken jToken)
+        {
+            var parms = jToken.ToObject<GetParms>();
+            switch (parms.function)
+            {
+                case "LoadCountries":
+                    return Ok(new { results = "Success" });
+                case "GetUsers":
+                    string jsonDataDir = CommonFileProcs.GetLocalDirectory("JsonData");
+                    string jsonData = CommonFileProcs.GetAllRecords(jsonDataDir, "UserAccountInitList.json");
+                    List<UserDetailJson> rtn_list = CommonJSONProcs.ProcessJSONClass<UserDetailJson>(jsonData);
+                    return Ok(new { results = rtn_list });
+                default:
+                    return BadRequest("Unknown function");
+            }
+        }
+
         [HttpGet]
         [Route("api/Address/LoadCountries")]
         public IEnumerable<CountryCode> LoadCountries()
         { return LoadCountries("json", true); }
+
         [HttpGet]
         [Route("api/Address/LoadCountries/{source}")]
         public IEnumerable<CountryCode> LoadCountries(string source, bool truncate)
@@ -106,6 +134,18 @@ namespace WebAPI.Controllers
             List<UserDetailJson> rtn_list = CommonJSONProcs.ProcessJSONClass<UserDetailJson>(jsonData);
             return rtn_list;
         }
+
+        [HttpGet]
+        [AllowAnonymous]
+        [Route("api/Address/GetUsersJSON")]
+        public IHttpActionResult GetUsersJSON()
+        {
+            string jsonDataDir = CommonFileProcs.GetLocalDirectory("JsonData");
+            string jsonData = CommonFileProcs.GetAllRecords(jsonDataDir, "UserAccountInitList.json");
+            List<UserDetailJson> rtn_list = CommonJSONProcs.ProcessJSONClass<UserDetailJson>(jsonData);
+            return Ok(new { results = rtn_list });
+        }
+
         [HttpGet]
         [Route("api/Address/LoadUsers")]
         public IEnumerable<UserDetailJson> LoadUsers()
@@ -130,6 +170,7 @@ namespace WebAPI.Controllers
                 {
                     var errors = db_con.GetValidationErrors();
                     var errorList = CommonErrorProcs.ExtractValidationErrors(db_con);
+                    //return errorList;
                 }
             }
 

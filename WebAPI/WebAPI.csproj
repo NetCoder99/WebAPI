@@ -172,6 +172,7 @@
     <Compile Include="Common\JsonConverterBool.cs" />
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataConnections\DBFunctions.cs" />
     <Compile Include="DataConnections\SqlExpIdentity.cs" />
     <Compile Include="DataConnections\SqlLclIdentity.cs" />
@@ -188,7 +189,12 @@
     <Compile Include="Migrations\201903231953088_users2.Designer.cs">
       <DependentUpon>201903231953088_users2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903251603046_user3.cs" />
+    <Compile Include="Migrations\201903251603046_user3.Designer.cs">
+      <DependentUpon>201903251603046_user3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Misc\GetParms.cs" />
     <Compile Include="Models\Security\AspNetRoles.cs" />
     <Compile Include="Models\Security\AspNetUser.cs" />
     <Compile Include="Models\Security\AspNetUserClaims.cs" />
@@ -207,6 +213,7 @@
     <Compile Include="Models\Misc\StudentData.cs" />
     <Compile Include="Models\Misc\StudentFields.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\BasicAuthentication.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\WebAPI.mdf" />
@@ -270,6 +277,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201903231953088_users2.resx">
       <DependentUpon>201903231953088_users2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903251603046_user3.resx">
+      <DependentUpon>201903251603046_user3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
