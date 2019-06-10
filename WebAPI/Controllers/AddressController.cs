@@ -20,6 +20,23 @@ namespace WebAPI.Controllers
     {
         [HttpGet]
         [AllowAnonymous]
+        [Route("api/Address/Hello")]
+        public IHttpActionResult Hello()
+        {
+            return Ok(new { results = "Hello world." });
+        }
+
+        [HttpGet]
+        [Route("api/Address/HelloAuth")]
+        public IHttpActionResult HelloAuth()
+        {
+            string auth_name = 
+
+            return Ok(new { results = "Hello world." });
+        }
+
+        [HttpGet]
+        [AllowAnonymous]
         [Route("api/Address/Get")]
         public IHttpActionResult Get([FromBody]JToken jToken)
         {
