@@ -169,7 +169,7 @@
     <Compile Include="Common\CommonErrorProcs.cs" />
     <Compile Include="Common\GlobalExceptionHandler .cs" />
     <Compile Include="Common\HashFunctions.cs" />
-    <Compile Include="Common\JsonConverterBool.cs" />
+    <Compile Include="Formatters\JsonConverterBool.cs" />
     <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\SecurityController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -178,6 +178,7 @@
     <Compile Include="DataConnections\SqlLclIdentity.cs" />
     <Compile Include="DataConnections\SqlLclContext.cs" />
     <Compile Include="DataConnections\SqlExpContext.cs" />
+    <Compile Include="Formatters\DateFormatConverter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

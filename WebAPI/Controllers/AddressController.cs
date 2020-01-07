@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
         [Route("api/Address/HelloAuth")]
         public IHttpActionResult HelloAuth()
         {
-            string auth_name = 
+            //string auth_name = 
 
             return Ok(new { results = "Hello world." });
         }
@@ -102,6 +102,7 @@ namespace WebAPI.Controllers
 
 
         [HttpGet]
+        [AllowAnonymous]
         [Route("api/Address/GetCountries/")]
         public IEnumerable<CountryCode> GetCountries()
         {
@@ -121,14 +122,21 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         [Route("api/Address/GetStates")]
         public IEnumerable<StateCode> GetStates()
         {
-            using (var db_con = new SqlLclContext())
-            {
-                List<StateCode> rtn_obj = db_con.StateCodes.ToList();
-                return rtn_obj;
-            }
+
+            string jsonDataDir = CommonFileProcs.GetLocalDirectory("JsonData");
+            string jsonData = CommonFileProcs.GetAllRecords(jsonDataDir, "States.json");
+            List<StateCode> rtn_list = CommonJSONProcs.ProcessJSONClass<StateCode>(jsonData);
+            return rtn_list;
+
+            //using (var db_con = new SqlLclContext())
+            //{
+            //    List<StateCode> rtn_obj = db_con.StateCodes.ToList();
+            //    return rtn_obj;
+            //}
         }
         [HttpGet]
         [Route("api/Address/GetStates/{code}")]

@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 
-namespace WebAPI.Common
+namespace WebAPI.Formatters
 {
     public class JsonConverterBool : JsonConverter
     {
